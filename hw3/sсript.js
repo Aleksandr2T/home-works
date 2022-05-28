@@ -17,7 +17,7 @@
 
 // const num1 = +prompt("введите первое числo");
 // const num2 = +prompt("второе");
-// const operation = +prompt("Какое действие провести + - / * ?");
+// const operation = prompt("Какое действие провести + - / * ?");
 // let result;
 
 // switch (operation) {
@@ -34,29 +34,19 @@
 //     result = num1 / num2;
 //     break;
 // }
-// alert(`${num1} ${operation} ${num2} = ${result}`);
-
+// alert(`${result}`);
 
 
 
 
 const visitorAge = +prompt('Сколько вам лет?');
 const isWithParents = confirm('Вы с родителями?');
-// if (visitorAge > 18 && visitorAge < 60){
-//   console.log('Проход разрешен'); 
-// }else if(visitorAge >= 12 && visitorAge <= 18 || isWithParents){
-//   console.log('Проход разрешен 1');
-// }else if(visitorAge <= 60 && visitorAge >= 80 || isWithParents){
-//   console.log('Проход разрешен 2');
-// }else if(visitorAge >= 80 && visitorAge <= 12){
-//   console.log('Проход запрещен')
-// }
-if ((visitorAge >=12 && visitorAge <=18)||(visitorAge >=60 && visitorAge <=80) && isWithParents){
-  console.log('Проход разрешен');
-}else if(visitorAge >=18 && visitorAge <=60){
-  console.log('Проход разрешен');
-}else if(visitorAge <=12 && visitorAge >=80){
+
+
+if (visitorAge < 12 && visitorAge > 80 ){
   console.log('Проход запрещен');
-}
-
-
+}else if(visitorAge >=18 && visitorAge <=60){
+  console.log('Проход разрешен *');
+}else if((visitorAge >=12 && visitorAge <=18)||(visitorAge >=60 && visitorAge <=80) && isWithParents){
+  console.log('Проход разрешен ');
+};
