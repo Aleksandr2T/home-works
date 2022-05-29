@@ -21,14 +21,20 @@
 // getSum()
 // getSum()
 
-function identification(){
-  let userName = prompt('Введите ваше имя');
-  let userAge = +prompt('Введите ваш возраст');
+// function identification(){
+//   let userName = prompt('Введите ваше имя');
+//   let userAge = +prompt('Введите ваш возраст');
 
-    if(userAge > 30 ){
-      alert ('Здравствуйте'+ ' '+ userName );
-    }else if(userAge < 30 ){
-      alert ('Привет'+ ' '+ userName );
-    }
+//     if(userAge > 30 ){
+//       alert ('Здравствуйте'+ ' '+ userName );
+//     }else if(userAge < 30 ){
+//       alert ('Привет'+ ' '+ userName );
+//     }
+// }
+// identification()
+
+function degree() {
+   console.log(`5 ** 2 =`, 5 ** 2);
+   return;
 }
-identification()
+degree();
