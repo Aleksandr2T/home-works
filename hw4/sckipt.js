@@ -16,7 +16,7 @@
 //   const num1 = +prompt('Введите первое число');
 //   const num2 = +prompt('Второе');
 //   const sum = num1 + num2;
-//   alert (`Сумма:` +sum);
+//   alert (`Сумма:` sum);
 // }
 // getSum()
 // getSum()
@@ -33,8 +33,15 @@
 // }
 // identification()
 
-function degree() {
-   console.log(`5 ** 2 =`, 5 ** 2);
-   return;
-}
-degree();
+
+
+function pow(a, b) {
+   let result = a;
+   for (let i = 1; i < b; i++) {
+     result *= a;
+     console.log(result)
+   }
+   return result;
+ }
+ pow (5,2);
+ 
