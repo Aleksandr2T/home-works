@@ -55,5 +55,4 @@ nextPrime:
  }
 }; 
 
- primeNember(3, 20
-  )
+ primeNember(3, 11)
